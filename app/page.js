@@ -1,7 +1,12 @@
+import EventList from "./components/landing/EventList";
+import Header from "./components/landing/Header";
+
 export default function Home() {
   return (
-    <div className="text-3xl w-full h-screen flex justify-center items-center font-bold">
-      Eventory
-    </div>
+    <section className="container">
+      <Header />
+      {/* Event List */}
+      <EventList />
+    </section>
   );
 }
