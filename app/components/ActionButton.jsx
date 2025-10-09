@@ -14,7 +14,10 @@ const ActionButton = (DetailsFrom) => {
       </button>
 
       {/* <!-- bg-green-600 indicating Active --> */}
-      <Link href="/payment" className="w-full">
+      <Link
+        href="/payment"
+        className="w-full flex items-center justify-center bg-green-600 hover:bg-green-800 rounded-md"
+      >
         Going
       </Link>
     </div>
