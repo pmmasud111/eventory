@@ -1,13 +1,17 @@
+import Image from "next/image";
 import React from "react";
+import ActionButton from "../ActionButton";
 
 const HeroDetails = () => {
   return (
     <section className="container">
       <div className="bg-gradient-to-b from-slate-200/20 to-slate-800/30">
-        <img
+        <Image
           src="/events/google-io-2023-1.png"
           alt="Event 1"
           className="h-[450px] mx-auto"
+          width={1200}
+          height={500}
         />
       </div>
 
@@ -26,8 +30,7 @@ const HeroDetails = () => {
         </div>
 
         <div className="w-full flex gap-4 mt-4 flex-1 ">
-          <button className="w-full">Interested</button>
-          <button className="w-full">Going</button>
+          <ActionButton />
         </div>
       </div>
     </section>
