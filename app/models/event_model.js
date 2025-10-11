@@ -5,10 +5,11 @@ const schema = new mongoose.Schema({
   details: { type: String, required: true },
   location: { type: String, required: true },
   imageUrl: { type: String, required: true },
-  interested_ids: { type: Array, required: false },
-  going_ids: { type: Array, required: false },
-  swgs: { type: Array, required: false },
+  interested_ids: { type: [String], required: false },
+  going_ids: { type: [String], required: false },
+  swgs: { type: [String], required: false },
 });
 
-const eventModels = mongoose.model.events ?? mongoose.model("events", schema);
-export default eventModels;
+const eventModel = mongoose.models.events || mongoose.model("events", schema);
+
+export default eventModel;

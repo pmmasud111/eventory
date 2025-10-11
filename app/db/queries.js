@@ -1,7 +1,7 @@
-import { eventModel } from "../models/event_model";
+import eventModel from "../models/event_model";
 
 const getAllEvents = async () => {
-  const events = await eventModels.find();
+  const events = await eventModel.find();
   return events;
 };
 
