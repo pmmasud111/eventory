@@ -5,7 +5,7 @@ import { replaceMongoIdInArray } from "@/app/utils/data_utils";
 
 const EventList = async () => {
   // Fetch all events from the database
-  const allEvents = await replaceMongoIdInArray(await getAllEvents());
+  const allEvents = await getAllEvents();
 
   // Optional: log events to verify data
   console.log("Fetched events:", allEvents);
